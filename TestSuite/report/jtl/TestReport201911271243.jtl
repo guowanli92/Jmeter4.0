@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="509" it="0" lt="443" ct="223" ts="1574786622651" s="true" lb="login" rc="200" rm="OK" tn="统一用户平台 1-1" dt="text" by="2385" sby="1354" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>checkData</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <httpSample t="443" it="0" lt="443" ct="223" ts="1574786622651" s="true" lb="http://62.234.70.52:8088/login" rc="302" rm="" tn="统一用户平台 1-1" dt="" by="1036" sby="388" ng="1" na="1"/>
+  <httpSample t="51" it="0" lt="51" ct="23" ts="1574786623109" s="true" lb="http://62.234.70.52:8180?tk=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQ4MjI2MjMsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiZTRkNWIxNDAtNTQ3Zi00NzI0LTljZjctOWRkZDFiOWM1NmU3IiwiY2xpZW50X2lkIjoiZm9vQ2xpZW50SWRQYXNzd29yZCIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdfQ.fDwIz-hddC1sRaXJ0fQHFHOYgVhi9lAujgRHkXR6RHJ17h1J60WjBq5mZvHMdzRV34aPhof08qinaoldBrHInjQJGR7A6OXFdYlEqlDtRLf8Qm77FRI4ZxBTTfHM6kpKw5ufFh2R7Gr2yEMcdRRjrf1hTLeKdJJRcsgSBz3i7Yar9SBKXQVxjKLZDHC13WxwKAICJ2dlBz-Gy5XCfyZzUIddTdlyNodyJi2s_YFXwKwHyjeDO5bUCBSkAh3oa3j6d6UOiUfyiwA5qe7QS-UttuSvGeva9yloLX8e7NfiNsBDfBVPOIU7X6dXvVwuxPgyDiri5i1iRNAaExDgEM3NGQ" rc="200" rm="OK" tn="统一用户平台 1-1" dt="text" by="1349" sby="966" ng="1" na="1"/>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1574786623268" s="true" lb="get-token" rc="200" rm="OK" tn="统一用户平台 1-1" dt="text" by="1348" sby="321" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="88" it="0" lt="66" ct="27" ts="1574786623293" s="true" lb="user-info" rc="200" rm="" tn="统一用户平台 1-1" dt="text" by="816" sby="1578" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>checkId</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="170" it="0" lt="170" ct="34" ts="1574786623383" s="true" lb="获取应用系统" rc="200" rm="" tn="统一用户平台 1-1" dt="text" by="2685" sby="1573" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>检查是否存在车站仿真系统</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="46" it="0" lt="46" ct="0" ts="1574786623556" s="true" lb="获取角色信息" rc="200" rm="" tn="统一用户平台 1-1" dt="text" by="2854" sby="1589" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>检查是否有“拥有35系统所有权限的用户”</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="75" it="0" lt="75" ct="0" ts="1574786623604" s="true" lb="修改归档参数为按月处理" rc="200" rm="" tn="统一用户平台 1-1" dt="text" by="705" sby="1647" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>value为1表示已经修改成功</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="42" it="0" lt="42" ct="0" ts="1574786623680" s="true" lb="修改归档有效期2年零1个月" rc="200" rm="" tn="统一用户平台 1-1" dt="text" by="704" sby="1648" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>value为1表示已经修改成功</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="69" it="0" lt="68" ct="24" ts="1574786623724" s="true" lb="请求能耗界面" rc="200" rm="" tn="统一用户平台 1-1" dt="text" by="382" sby="1660" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>查询是否有青岛地铁字样</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>

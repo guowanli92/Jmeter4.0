@@ -1,0 +1,8 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1574948055242,344,login,200,OK,统一用户平台 1-1,text,true,,2385,1418,1,1,286,0,101
+1574948055593,56,user-info,401,,统一用户平台 1-1,text,false,获取用户信息失败,693,972,1,1,56,0,21
+1574948055781,51,获取应用系统,401,,统一用户平台 1-1,text,false,Test failed: headers expected to contain /HTTP/1.1 200 /,1896,1573,1,1,51,0,29
+1574948055834,29,获取角色信息,401,,统一用户平台 1-1,text,false,Test failed: headers expected to contain /HTTP/1.1 200/,1896,1589,1,1,29,0,0
+1574948055864,39,修改归档参数为按月处理,401,,统一用户平台 1-1,text,false,Test failed: headers expected to contain /HTTP/1.1 200 /,1896,1647,1,1,39,0,0
+1574948055905,45,修改归档有效期2年零1个月,401,,统一用户平台 1-1,text,false,Test failed: headers expected to contain /HTTP/1.1 200 /,1896,1648,1,1,45,0,0
+1574948055951,59,请求能耗界面,200,,统一用户平台 1-1,text,true,,382,1660,1,1,59,0,31

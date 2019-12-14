@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Load Test Results</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                                .page_details_expanded
+                                {
+                                    display: block;
+                                    display/* hide this definition from  IE5/6 */: table-row;
+                                }
+
+
+			</style>
+<script language="JavaScript">
+                           function expand(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details_expanded";
+			   }
+			   
+			   function collapse(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details";
+			   }
+			   
+			   function change(details_id)
+			   {
+			      if(document.getElementById(details_id+"_image").src.match("expand"))
+			      {
+			         document.getElementById(details_id+"_image").src = "collapse.png";
+			         expand(details_id);
+			      }
+			      else
+			      {
+			         document.getElementById(details_id+"_image").src = "expand.png";
+			         collapse(details_id);
+			      } 
+                           }
+			</script>
+</head>
+<body>
+<h1>Load Test Results</h1>
+<table width="100%">
+<tr>
+<td align="left">Date report: date not defined</td><td align="right">Designed for use with <a href="http://jmeter.apache.org/">JMeter</a> and <a href="http://ant.apache.org">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center">2</td><td align="center">1</td><td align="center">50.00%</td><td align="center">810 ms</td><td align="center">221 ms</td><td align="center">1399 ms</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Pages</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>URL</th><th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td>拉勾网职位信息</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1399 ms</td><td align="right">1399 ms</td><td align="right">1399 ms</td><td align="center"><a href="javascript:change('page_details_1')"><img alt="expand/collapse" src="expand.png" id="page_details_1_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_1">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "拉勾网职位信息"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>线程组 1-1</td><td align="center">1</td><td align="right">1399</td><td align="right">25953</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E6%8B%89%E5%8B%BE%E7%BD%91%E7%BF%BB%E9%A1%B5%EF%BC%88%E6%90%9C%E7%B4%A2%E2%80%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E2%80%9D%E5%90%8E%E7%BF%BB%E8%87%B3%E7%AC%AC%E4%BA%8C%E9%A1%B5%EF%BC%89">拉勾网翻页（搜索&ldquo;自动化测试&rdquo;后翻至第二页）</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">221 ms</td><td align="right">221 ms</td><td align="right">221 ms</td><td align="center"><a href="javascript:change('page_details_2')"><img alt="expand/collapse" src="expand.png" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "拉勾网翻页（搜索&ldquo;自动化测试&rdquo;后翻至第二页）"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>线程组 1-1</td><td align="center">1</td><td align="right">221</td><td align="right">25587</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Failure Detail</h2>
+<h3>拉勾网翻页（搜索&ldquo;自动化测试&rdquo;后翻至第二页）<a name="%E6%8B%89%E5%8B%BE%E7%BD%91%E7%BF%BB%E9%A1%B5%EF%BC%88%E6%90%9C%E7%B4%A2%E2%80%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E2%80%9D%E5%90%8E%E7%BF%BB%E8%87%B3%E7%AC%AC%E4%BA%8C%E9%A1%B5%EF%BC%89"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td></td>
+</tr>
+</table>
+</body>
+</html>

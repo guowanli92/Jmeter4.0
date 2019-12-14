@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1881" it="0" lt="1878" ct="1417" ts="1574695030858" s="true" lb="拉勾网职位信息" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="25961" sby="1634" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对业务状态码进行断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对数据进行断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="202" it="0" lt="170" ct="0" ts="1574695032828" s="false" lb="拉勾网翻页（搜索“自动化测试”后翻至第二页）" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="25564" sby="2119" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对业务状态码进行断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对第二页的的数据进行断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to match regexp &apos;凌志软件
+&apos;, but it did not match: &apos;瞬联软件科技（北京）有限公司&apos;</failureMessage>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="2134" it="0" lt="2129" ct="1775" ts="1574695063651" s="true" lb="拉勾网职位信息" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="25961" sby="1634" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对业务状态码进行断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对数据进行断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="450" it="0" lt="440" ct="171" ts="1574695065897" s="false" lb="拉勾网翻页（搜索“自动化测试”后翻至第二页）" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="25703" sby="2119" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对业务状态码进行断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对第二页的的数据进行断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to match regexp &apos;凌志软件
+&apos;, but it did not match: &apos;瞬联软件科技（北京）有限公司&apos;</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

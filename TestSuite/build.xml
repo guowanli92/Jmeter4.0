@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF8"?>
+
+<project name="ant-jmeter-test" default="run" basedir=".">
+
+<property name="jmeterPath" value="E:\apache-jmeter-4.0"/>
+<property name="mailhost" value="smtp.combuilder.com.cn"/>
+<property name="username" value="wanli.guo@combuilder.com.cn"/>
+<property name="password" value="1992918Ghjkl"/>
+<property name="mailfrom" value="wanli.guo@combuilder.com.cn"/>
+<property name="mail_to" value="guowanli163@163.com"/>
+<property name="mailsubject" value="外网统一用户系统接口自动化测试报告"/>
+<property name="mail_port" value="25"/>
+<property name="message" value="Hi！请查收下，这是XX接口自动化测试报告，如有任何疑问，请联系我，谢谢！"/>
+
+
+    <tstamp>
+        <format property="time" pattern="yyyyMMddhhmm" />
+     </tstamp>
+     <property name="jmeter.home" value="${jmeterPath}" />
+     <property name="jmeter.result.jtl.dir" value="${jmeterPath}\TestSuite\report\jtl" />
+     <property name="jmeter.result.html.dir" value="${jmeterPath}\TestSuite\report\html" />
+     <property name="htmlReportNameSummary" value="TestReport" />
+     <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${htmlReportNameSummary}${time}.jtl" />
+     <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${htmlReportNameSummary}${time}.html" />
+
+     
+    <target name="run">
+         <antcall target="test" />
+         <antcall target="report" />
+		 <antcall target="sendEmail" />
+     </target>
+     
+	 <!--执行接口测试-->
+     <target name="test">
+	 	 <echo>执行接口自动化测试</echo>
+         <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
+         <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
+		    <!--要执行的测试脚本-->
+            <testplans dir="${jmeterPath}\TestSuite\script\" includes="Jmeter实战-慕课网.jmx" />
+             <property name="jmeter.save.saveservice.output_format" value="xml"/>
+         </jmeter>
+     </target>
+	 
+	 <!--解决报告中NAN字段显示问题-->
+	 <path id="xslt.classpath">
+        <fileset dir="${jmeter.home}/lib" includes="xalan-2.7.2.jar"/>
+        <fileset dir="${jmeter.home}/lib" includes="serializer-2.7.2.jar"/>
+    </path>
+
+     <!--生成HTML测试报告-->
+     <target name="report">
+	 <echo>生成接口自动测试报告</echo>
+         <xslt classpathref="xslt.classpath"
+		      force="true"
+		      in="${jmeter.result.jtlName}" out="${jmeter.result.htmlName}"
+              style="${jmeter.home}/extras/jmeter-results-detail-report_21.xsl"  />
+		
+		<!--复制图片-->
+        <copy todir="${jmeter.result.html.dir}">
+             <fileset dir="${jmeter.home}/extras">
+                 <include name="collapse.png" />
+                 <include name="expand.png" />
+             </fileset>
+        </copy>
+     </target>
+	  <!--自动发送邮件-->
+	<target name="sendEmail">
+	<echo>发送自动化测试报告</echo>
+		 <mail mailhost="${mailhost}"
+			ssl="false"
+			user="${username}" 
+			password="${password}" 
+			mailport="${mail_port}"
+			subject="${mailsubject}" 
+			messagemimetype="text/html" 
+			tolist="${mail_to}">
+		 <from address="${mailfrom}" />
+			   <attachments>
+					 <fileset dir="${jmeter.result.html.dir}">
+							 <include name="${htmlReportNameSummary}${time}.html"/>
+							 <include name="collapse.png" />
+							 <include name="expand.png" />
+					 </fileset>
+			   </attachments>
+			   <message>
+			   ${message}
+			   </message>
+		 </mail>
+	 </target>
+ </project>

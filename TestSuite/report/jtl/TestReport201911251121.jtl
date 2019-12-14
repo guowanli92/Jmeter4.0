@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1237" it="0" lt="1236" ct="1136" ts="1574695296036" s="false" lb="拉勾网职位信息" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="316" sby="1634" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对业务状态码进行断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>No results for path: $[&apos;code&apos;]</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对数据进行断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Missing property in path $[&apos;content&apos;]</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="88" it="0" lt="88" ct="0" ts="1574695297339" s="false" lb="拉勾网翻页（搜索“自动化测试”后翻至第二页）" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="316" sby="2119" ng="1" na="1">
+  <assertionResult>
+    <name>checkStatus</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对业务状态码进行断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>No results for path: $[&apos;code&apos;]</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>基于json对第二页的的数据进行断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Missing property in path $[&apos;content&apos;]</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

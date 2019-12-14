@@ -1,0 +1,40 @@
+2019-11-28 21:14:14,732 INFO o.a.j.u.JMeterUtils: Setting Locale to zh_CN
+2019-11-28 21:14:14,913 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2019-11-28 21:14:14,929 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: Copyright (c) 1998-2018 The Apache Software Foundation
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: Version 4.0 r1823414
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: java.version=1.8.0_231
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: os.name=Windows 10
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: os.arch=amd64
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: os.version=10.0
+2019-11-28 21:14:14,965 INFO o.a.j.JMeter: file.encoding=GBK
+2019-11-28 21:14:14,966 INFO o.a.j.JMeter: Max memory     =1073741824
+2019-11-28 21:14:14,966 INFO o.a.j.JMeter: Available Processors =4
+2019-11-28 21:14:15,004 INFO o.a.j.JMeter: Default Locale=English (EN)
+2019-11-28 21:14:15,004 INFO o.a.j.JMeter: JMeter  Locale=Chinese (China)
+2019-11-28 21:14:15,005 INFO o.a.j.JMeter: JMeterHome=E:\apache-jmeter-4.0
+2019-11-28 21:14:15,005 INFO o.a.j.JMeter: user.dir  =E:\apache-jmeter-4.0\bin
+2019-11-28 21:14:15,005 INFO o.a.j.JMeter: PWD       =E:\apache-jmeter-4.0\bin
+2019-11-28 21:14:15,024 INFO o.a.j.JMeter: IP: 192.168.0.173 Name: DESKTOP-DHPDCCS FullName: DESKTOP-DHPDCCS
+2019-11-28 21:14:16,330 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2019-11-28 21:14:16,543 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2019-11-28 21:14:16,543 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2019-11-28 21:14:16,964 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2019-11-28 21:14:18,872 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-11-28 21:14:18,872 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-11-28 21:14:22,091 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-101231de5d6e36552b984b35ee95c519-gui
+2019-11-28 21:14:26,658 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-11-28 21:14:26,662 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-11-28 21:14:26,664 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-11-28 21:14:26,665 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-11-28 21:14:26,666 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-11-28 21:14:26,667 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-11-28 21:14:28,097 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2019-11-28 21:14:28,098 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file E:\apache-jmeter-4.0\bin\proxyserver.jks
+2019-11-28 21:14:28,307 INFO o.a.j.s.FileServer: Default base='E:\apache-jmeter-4.0\bin'
+2019-11-28 21:14:29,482 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-11-28 21:14:29,482 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-11-28 21:14:29,482 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-11-28 21:14:29,482 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-11-28 21:14:52,736 INFO o.j.r.PluginManager: Plugins Status: [jpgc-json=2.7, jpgc-mergeresults=2.1, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, websocket-sampler=1.0.2-SNAPSHOT, websocket-samplers=1.2.2, jpgc-xml=0.1, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
